@@ -1,0 +1,6 @@
+<app-add-list (addList)="addList($event)"></app-add-list>
+<app-list-item
+  *ngFor="let list of lists"
+  [list]="list"
+  (deleteList)="deleteList($event)"
+></app-list-item>
