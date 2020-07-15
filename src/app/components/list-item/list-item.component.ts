@@ -30,7 +30,6 @@ export class ListItemComponent implements OnInit {
   onToggle(list) {
     //Toggle in UI
     list.completed = !list.completed;
-    console.log('list completed', list.completed);
     //Toggle in server
     this.listService.toggleCompleted(list).subscribe(item => console.log(item));
   }
